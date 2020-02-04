@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 /**
  * 
  * @author HenTryRAj
@@ -12,17 +13,21 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class HomePageAmazon {
 	public WebDriver driver;
-	@FindBy(id ="twotabsearchtextbox")
+	@FindBy(id = "twotabsearchtextbox")
 	private WebElement searchBox;
+
 	public WebElement getSearchBox() {
 		return searchBox;
 	}
-	public HomePageAmazon(WebDriver driver ) {
+
+	public HomePageAmazon(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+
 	/**
 	 * Navigate from Homeapage to Product List page
+	 * 
 	 * @param product
 	 * @return
 	 */
@@ -30,6 +35,5 @@ public class HomePageAmazon {
 		searchBox.sendKeys(product, Keys.ENTER);
 		return new AmazonProductListPage(driver);
 	}
-	
 
 }

@@ -9,6 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+
 /**
  * 
  * @author HenTryRAj
@@ -21,25 +22,26 @@ public class BaseClass implements IAutoConstant {
 	public FileLib fileLib = new FileLib();
 	public WebDriverUtils webLib = new WebDriverUtils();
 	public WebDriver driver;
-	//@Parameters("browser")
-	
+	// @Parameters("browser")
+
 	@BeforeClass
 	public void configBC() throws IOException {
-		//launch the browser
+		// launch the browser
 		String BROWSER = fileLib.getDataFromProperties("browser");
-		if(BROWSER.equals("chrome"))
-		 driver = new ChromeDriver();
-		else if(BROWSER.equals("firefox"))
-		driver = new FirefoxDriver();
+		if (BROWSER.equals("chrome"))
+			driver = new ChromeDriver();
+		else if (BROWSER.equals("firefox"))
+			driver = new FirefoxDriver();
 	}
-	
+
 	@BeforeMethod
 	public void configBM() throws IOException {
-		String URL= fileLib.getDataFromProperties("url");
+		String URL = fileLib.getDataFromProperties("url");
 		driver.manage().window().maximize();
 		webLib.woitForElementToLoad(driver);
 		driver.get(URL);
-		}
+	}
+
 	@AfterMethod
 	public void configAM() {
 
@@ -47,7 +49,6 @@ public class BaseClass implements IAutoConstant {
 
 	@AfterTest
 	public void configAT() {
-	driver.close();
+		driver.close();
 	}
 }
-
