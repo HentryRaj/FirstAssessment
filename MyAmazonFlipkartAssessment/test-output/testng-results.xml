@@ -5,31 +5,31 @@
       <![CDATA[The Amazon price for 'iPhone XR (64GB) - Yellow' ===> 47900 is Less]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="132790" started-at="2020-01-31T20:08:08Z" finished-at="2020-01-31T20:10:21Z">
+  <suite name="Default suite" duration-ms="136054" started-at="2020-02-04T16:44:50Z" finished-at="2020-02-04T16:47:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="132790" started-at="2020-01-31T20:08:08Z" finished-at="2020-01-31T20:10:21Z">
+    <test name="Default test" duration-ms="136054" started-at="2020-02-04T16:44:50Z" finished-at="2020-02-04T16:47:06Z">
       <class name="com.assignment.scriptTest.CompareTwoPriceTest">
-        <test-method status="PASS" signature="configBC()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="configBC" is-config="true" duration-ms="24147" started-at="2020-02-01T01:38:08Z" finished-at="2020-02-01T01:38:32Z">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="configBC" is-config="true" duration-ms="50935" started-at="2020-02-04T22:14:50Z" finished-at="2020-02-04T22:15:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="configBM" is-config="true" duration-ms="60671" started-at="2020-02-01T01:38:32Z" finished-at="2020-02-01T01:39:33Z">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="configBM" is-config="true" duration-ms="32303" started-at="2020-02-04T22:15:41Z" finished-at="2020-02-04T22:16:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="comparePriceOfAmazonTest()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="comparePriceOfAmazonTest" duration-ms="46914" started-at="2020-02-01T01:39:33Z" finished-at="2020-02-01T01:40:20Z">
+        <test-method status="PASS" signature="comparePriceOfAmazonTest()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="comparePriceOfAmazonTest" duration-ms="50255" started-at="2020-02-04T22:16:13Z" finished-at="2020-02-04T22:17:03Z">
           <reporter-output>
             <line>
               <![CDATA[The Amazon price for 'iPhone XR (64GB) - Yellow' ===> 47900 is Less]]>
             </line>
           </reporter-output>
         </test-method> <!-- comparePriceOfAmazonTest -->
-        <test-method status="PASS" signature="configAM()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="configAM" is-config="true" duration-ms="0" started-at="2020-02-01T01:40:20Z" finished-at="2020-02-01T01:40:20Z">
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="configAM" is-config="true" duration-ms="0" started-at="2020-02-04T22:17:03Z" finished-at="2020-02-04T22:17:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method status="PASS" signature="configAT()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="configAT" is-config="true" duration-ms="1033" started-at="2020-02-01T01:40:20Z" finished-at="2020-02-01T01:40:21Z">
+        <test-method status="PASS" signature="configAT()[pri:0, instance:com.assignment.scriptTest.CompareTwoPriceTest@9629756]" name="configAT" is-config="true" duration-ms="2510" started-at="2020-02-04T22:17:03Z" finished-at="2020-02-04T22:17:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAT -->
