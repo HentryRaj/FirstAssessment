@@ -18,34 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 public class WebDriverUtils {
-	/**
-	 *Its is method for random values 
-	 * @return
-	 */
-	public int randomNumber() {
-		Random ran = new Random();
-		return ran.nextInt(10000);
-	}
-	/**
-	 * used for select class and use the argument visible text 
-	 * @param element
-
-	 * @param option
-	 */
-	public void select(WebElement element, String option) {
-		Select sel = new Select(element);
-		sel.selectByVisibleText(option);
-	}
-	/**
-	 * used for select class and use the argument index value
-	 * @param element
-	 * @param optionInt
-	 */
-	public void select(WebElement element , int optionInt) {
-		Select sel = new Select(element);
-		sel.selectByIndex(optionInt);
-	}
-	/**
+		/**
 	 * used for implicitly wait
 	 * @param driver
 	 */
@@ -69,76 +42,6 @@ public class WebDriverUtils {
 	public void waitForElementToBeClickable(WebDriver driver , WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
-	}
-	/**
-	 * This method is use to wait for element to be clickable
-	 * @param driver
-	 * @param element
-	 * @throws InterruptedException 
-	 */
-	public void waitForElementAndClick(WebDriver driver , WebElement element ) throws InterruptedException {
-		int count =  0;
-		while(count <= 20) {
-			try {
-				element.click();
-				break;
-			}
-			catch (Throwable e) {
-				Thread.sleep(1000);
-				count++;
-			}
-		}
-	}
-	 /**
-	  * This method is use to double click
-	  * @param driver
-	  */
-	public void actionForDoubleClick(WebDriver driver ) {
-		Actions act = new Actions(driver);
-		act.doubleClick().perform();
-	}
-	/**
-	 * This method is use to move to particular element
-	 * @param driver
-	 * @param element
-	 */
-	public void actionForMoveTo(WebDriver driver, WebElement element) {
-		Actions act = new Actions(driver);
-		act.moveToElement(element);
-	}
-	/**
-	 * This method is use to click on accept in alert popup
-	 * @param driver
-	 */
-	public void alertPopUpForAccept(WebDriver driver) {
-		driver.switchTo().alert().accept();
-	}
-	/**
-	 * This method is use to click on cancel in alert popup
-	 * @param driver
-	 */
-	public void alertPopUpForDismiss(WebDriver driver) {
-		driver.switchTo().alert().dismiss();
-	}
-		static String parentWind;
-	    static String childWind;
-	/**
-	 * This method is use to switch from parent window to child window
-	 * @param driver
-	 */
-	public void switchToChildwindow(WebDriver driver) {
-	Set<String> set = driver.getWindowHandles();
-	Iterator<String> is = set.iterator();
-		parentWind	= is.next();
-		childWind	    = is.next();
-		driver.switchTo().window(childWind);
-	}
-	/**
-	 * This method is use to switch from child window to parent window 
-	 * @param driver
-	 */
-	public void switchToParentwindow(WebDriver driver) {
-		driver.switchTo().window(parentWind);
 	}
 	/**
 	 * convert String into number
