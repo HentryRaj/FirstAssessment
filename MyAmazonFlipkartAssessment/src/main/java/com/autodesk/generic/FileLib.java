@@ -19,7 +19,7 @@ public class FileLib {
 	 * @return
 	 * @throws IOException
 	 */
-	public String path = "./src/test/resources/TestData/commonData.properties";
+	public String path = "./src/main/resources/TestData/commonData.properties";
 
 	public String getDataFromProperties(String key) throws IOException {
 		FileInputStream fileObj = new FileInputStream(path);
