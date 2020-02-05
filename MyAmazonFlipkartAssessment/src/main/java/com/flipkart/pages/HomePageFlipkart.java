@@ -13,6 +13,8 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class HomePageFlipkart {
 	public WebDriver driver;
+	@FindBy(xpath = "//button[@class='_2AkmmA _29YdH8']")
+	private WebElement closeBtn;
 	@FindBy(name = "q")
 	private WebElement searchBox;
 
@@ -32,8 +34,8 @@ public class HomePageFlipkart {
 	 * @return
 	 */
 	public FlipkartProductListPage navigateToProductListPage(String product) {
+		closeBtn.click();
 		searchBox.sendKeys(product, Keys.ENTER);
-
 		return new FlipkartProductListPage(driver);
 	}
 }

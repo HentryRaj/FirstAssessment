@@ -42,8 +42,8 @@ public class CompareTwoPriceTest extends BaseClass {
 		long flipkartPrice = webLib.convertIntoNumb(actualPriceFlipkart);
 		/* Verfication */
 		if (amazonPrice > flipkartPrice) {
-			Reporter.log("The Flipkart price for 'iPhone XR (64GB) - Yellow' ===> " + flipkartPrice + " is Less", true);
+			Reporter.log("The Flipkart price for 'iPhone XR (64GB) - Yellow' ===> " + flipkartPrice + " is Less compare to price of Amazon " , true);
 		} else
-			Reporter.log("The Amazon price for 'iPhone XR (64GB) - Yellow' ===> " + amazonPrice + " is Less", true);
+			Reporter.log("The Amazon price for 'iPhone XR (64GB) - Yellow' ===> " + amazonPrice + " is Less compare to price of Flipkart ", true);
 	}
 }
