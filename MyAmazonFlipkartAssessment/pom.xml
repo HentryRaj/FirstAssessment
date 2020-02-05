@@ -18,7 +18,7 @@
 	</dependency>
   </dependencies>
  <build>
-  <defaultGoal>install</defaultGoal>
+  <defaultGoal>test</defaultGoal>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
